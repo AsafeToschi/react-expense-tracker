@@ -9,9 +9,10 @@ function Expenses(props) {
 		return (
 			<ExpenseItem
 				key={index}
-				title={props.items[0].title}
-				amount={props.items[0].amount}
-				date={props.items[0].date}
+				title={props.items[index].title}
+				toggleTitle={props.items[index].toggleTitle}
+				amount={props.items[index].amount}
+				date={props.items[index].date}
 			/>
 		)
 	})
